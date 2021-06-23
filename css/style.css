@@ -3,3 +3,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.clearfix::after {
+    display: block;
+    content: " ";
+    clear: both;
+  }
+
+/* container */
+#app {
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+}
+/* logo */
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    width: 70%;
+}
+
+/* adder */
+
+#adder {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#adder input, #adder button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* lista note */
+
+.notes {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.notes ul {
+    list-style: none;
+}
+
+.notes ul li {
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid turquoise;
+    padding: 10px;
+}
+
+.notes i {
+    float: right;
+}
