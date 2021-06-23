@@ -22,7 +22,7 @@
 
         <div class="notes">
             <ul>
-                <li v-for="(note, index) in listaNote" class="clearfix">{{note}} <i class="fas fa-times-circle"></i></li>
+                <li v-for="(note, index) in listaNote" class="clearfix">{{note}} <i @click="removeNote(index)" class="fas fa-times-circle"></i></li>
             </ul>
 
         </div>

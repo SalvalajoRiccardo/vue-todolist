@@ -11,6 +11,10 @@ const app = new Vue({
                 this.listaNote.push(this.newList);
                 this.newList = '' ;
             }
+        },
+        
+        removeNote(i) {
+            this.listaNote.splice(i);
         }
     }
 });
