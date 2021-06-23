@@ -16,13 +16,13 @@
         </div>
 
         <div id="adder">
-            <input type="text" id="toadd" name="toadd" placeholder="aggiungi nota">
-            <button>aggiungi</button>
+            <input type="text" id="toadd" name="toadd" placeholder="aggiungi nota" v-model="newList">
+            <button @click="addNote(newList)">aggiungi</button>
         </div>
 
         <div class="notes">
             <ul>
-                <li class="clearfix">fare la spesa <i class="fas fa-times-circle"></i></li>
+                <li v-for="(note, index) in listaNote" class="clearfix">{{note}} <i class="fas fa-times-circle"></i></li>
             </ul>
 
         </div>

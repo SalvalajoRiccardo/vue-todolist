@@ -15,7 +15,9 @@
     width: 60%;
     margin: 0 auto;
     height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /* logo */
 #logo {
     text-align: center;
@@ -43,20 +45,25 @@
 
 .notes {
     background-color: aquamarine;
-    padding: 20px;
+    
 }
 
 .notes ul {
     list-style: none;
+    padding: 40px 20px;
 }
 
 .notes ul li {
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     border-bottom: 1px solid turquoise;
-    padding: 10px;
+    padding: 15px;
 }
 
 .notes i {
     float: right;
+}
+
+.notes ul li:hover {
+    background-color: rgb(2, 83, 83);
 }
