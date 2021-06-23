@@ -53,7 +53,7 @@
     padding: 40px 20px;
 }
 
-.notes ul li {
+.notes ul li,.notes h2 {
     font-size: 20px;
     text-transform: uppercase;
     border-bottom: 1px solid turquoise;
@@ -67,3 +67,4 @@
 .notes ul li:hover {
     background-color: rgb(2, 83, 83);
 }
+

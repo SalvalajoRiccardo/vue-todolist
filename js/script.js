@@ -14,7 +14,7 @@ const app = new Vue({
         },
         
         removeNote(i) {
-            this.listaNote.splice(i);
+            this.listaNote.splice(i,1);
         }
     }
 });

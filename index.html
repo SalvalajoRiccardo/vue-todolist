@@ -16,14 +16,16 @@
         </div>
 
         <div id="adder">
-            <input type="text" id="toadd" name="toadd" placeholder="aggiungi nota" v-model="newList">
+            <input type="text" id="toadd" name="toadd" placeholder="aggiungi nota" v-model="newList" @keyup.enter="addNote(newList)">
             <button @click="addNote(newList)">aggiungi</button>
         </div>
 
         <div class="notes">
-            <ul>
-                <li v-for="(note, index) in listaNote" class="clearfix">{{note}} <i @click="removeNote(index)" class="fas fa-times-circle"></i></li>
+            
+            <ul v-if="listaNote.length > 0">
+                <li  v-for="(note, index) in listaNote" class="clearfix">{{note}} <i @click="removeNote(index)" class="fas fa-times-circle"></i></li>
             </ul>
+            <h2 v-else>la lista è vuota</h2>
 
         </div>
 
